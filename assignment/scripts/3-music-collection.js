@@ -52,10 +52,25 @@ addToCollection('Souvlaki', 'Slowdive', 1993); // Test
 showCollection(collection); // Test
 // It actually works! :D
 
-
-
-
-
-
-
+// findByArtist function
+function findByArtist(artist) {
+    let matchingArtist = []; 
+    let emptyArtist = [];
+    
+    for (album of collection) {
+        if (artist === album.artist) {
+            matchingArtist.push(artist);
+            console.log('Matching artist:', artist);
+        } else  {
+            emptyArtist.push(artist);
+            console.log('No matching artist:', artist);
+        }
+    }
+}
+findByArtist('Aphex Twin'); // Test
+findByArtist('Mozart'); // Test
+/* 
+It appears to correctly ID a matching artist or nonmatching artist. 
+But then returns additionally a "No matching artist" message for the matching artist.
+*/
 
