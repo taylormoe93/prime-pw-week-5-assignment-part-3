@@ -16,7 +16,7 @@ function addToCollection(title, artist, yearPublished) {
 		yearPublished,
 	};
 	collection.push(album);
-	return album;
+	return console.log(album);
 }
 
 // Test 'addToCollection'
@@ -26,4 +26,5 @@ addToCollection('The Campfire Headphase', 'Boards of Canada', 2005);
 addToCollection('Blackstar', 'David Bowie', 2016);
 addToCollection('Bad Witch', 'Nine Inch Nails', 2018);
 addToCollection('The Downward Spiral', 'Nine Inch Nails', 1994);
-console.log(collection);
+
+

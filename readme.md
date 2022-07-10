@@ -23,10 +23,10 @@ X Add a function named `addToCollection`. This function should:
   X Add the new object to the end of the `collection` array
   X Return the newly created object
 
-- Test the `addToCollection` function:
-  - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
-  - Console.log each album as added using the returned value.
-  - After all are added, console.log the `collection` array.
+X Test the `addToCollection` function:
+  X Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
+  X Console.log each album as added using the returned value.
+  X After all are added, console.log the `collection` array.
 
 - Add a function named `showCollection`. This function should:
   - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
