@@ -1,21 +1,29 @@
-console.log('***** Music Collection *****')
+console.log('***** Music Collection *****');
 
 // Creat variable array 'collection'
 let collection = [];
 
 /* Create function 'addToCollection'
 Include parameters.
-Create new object (record) with same properties as the parameters.
+Create new object (album) with same properties as the parameters.
 Push to end of 'collection' array.
-Return 'record' object.
+Return 'album' object.
 */
-function addToCollection (title, artist, yearPublished){
-    let record = {
-        title, artist, yearPublished
-    }
-    collection.push(record);
-    return record;
+function addToCollection(title, artist, yearPublished) {
+	let album = {
+		title,
+		artist,
+		yearPublished,
+	};
+	collection.push(album);
+	return album;
 }
 
-// Test addToCollection
-
+// Test 'addToCollection'
+addToCollection('Selected Ambient Works, Volume 2', 'Aphex Twin', 1994);
+addToCollection('Selected Ambient Works 85-92', 'Aphex Twin', 1992);
+addToCollection('The Campfire Headphase', 'Boards of Canada', 2005);
+addToCollection('Blackstar', 'David Bowie', 2016);
+addToCollection('Bad Witch', 'Nine Inch Nails', 2018);
+addToCollection('The Downward Spiral', 'Nine Inch Nails', 1994);
+console.log(collection);
